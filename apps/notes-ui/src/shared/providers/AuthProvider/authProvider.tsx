@@ -123,9 +123,9 @@ export function AuthProvider({ children, ...props }: any) {
         `${STORAGE_PREFIX}${USER_ITEM_KEY}`,
         JSON.stringify({ user, token })
       );
-      setTimeout(() => {
-        history.push('/notes');
-      }, 500);
+     // history.push('/notes');
+      // workaround for MVP:
+      window.location.href = '/notes';
     } catch (error) {
       console.error('Register error', error);
     }
