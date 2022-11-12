@@ -28,7 +28,6 @@ export const createTypeormNoteRepository = (): NoteRepositoryInterface => {
       return data.map(mapNoteDBOtoDomain);
     },
     getNoteIdAndUserId: async (noteId: number, userId: number) => {
-      console.log({ noteId, userId });
       const [noteDBO] = await connectionSource.createEntityManager().query(
         `select
          n.*,

@@ -131,7 +131,6 @@ export function AuthProvider({ children, ...props }: any) {
     }
   };
 
-  console.log('user', user);
   return (
     <authContext.Provider
       value={{
