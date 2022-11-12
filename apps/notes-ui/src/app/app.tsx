@@ -1,4 +1,4 @@
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 import LoginPage from '../shared/pages/LoginPage';
 import { AuthenticatedRoute } from '../shared/pages/AuthenticatedRoute';
@@ -47,7 +47,7 @@ export function App() {
             <NotesPage />
           </AuthenticatedRoute>
 
-          <Route render={() => <h1>Not found</h1>} />
+          <Route render={() => <Redirect to="/notes" />} />
         </Switch>
       </div>
     </StyledApp>
