@@ -10,8 +10,13 @@
   <p align="center">
     This a simple app written in react and node.js (in typescript), using postgresql as data store.
     It allow to create/get/delete/share notes with other users.
-      
   </p>
+  
+  <img width="854" alt="Screenshot 2022-11-12 at 19 31 06" src="https://user-images.githubusercontent.com/12540508/201491542-2e9a3e32-eecc-4408-94d8-2578ae4d1f3f.png">
+  <img width="850" alt="Screenshot 2022-11-12 at 19 31 16" src="https://user-images.githubusercontent.com/12540508/201491530-42ec795e-4bea-44a0-b930-a06e17baa42b.png">
+  <img width="848" alt="Screenshot 2022-11-12 at 19 31 32" src="https://user-images.githubusercontent.com/12540508/201491529-6c0c7bb6-8b89-46ef-a4bf-332b31613490.png">
+
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
