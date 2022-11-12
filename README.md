@@ -81,7 +81,7 @@ git clone https://github.com/mariocoski/shared-notes-app
 ```
 2. Install NPM packages
 ```sh
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### Usage
