@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  notes-db:
+    container_name: stock-management-api-db
+    image: postgres:13.6-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: 'postgrespassword'
+    ports:
+      - 5432:5432

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "notes-api": "apps/notes-api",
+    "notes-ui": "apps/notes-ui",
+    "notes-ui-e2e": "apps/notes-ui-e2e"
+  }
+}

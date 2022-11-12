@@ -1,0 +1,53 @@
+{
+  "root": "apps/notes-api",
+  "sourceRoot": "apps/notes-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/notes-api",
+        "main": "apps/notes-api/src/index.ts",
+        "tsConfig": "apps/notes-api/tsconfig.app.json",
+        "assets": ["apps/notes-api/src/assets"],
+        "webpackConfig": ".webpack/express-dev.config.js"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/notes-api/src/environments/environment.ts",
+              "with": "apps/notes-api/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "notes-api:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/notes-api/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/notes-api"],
+      "options": {
+        "jestConfig": "apps/notes-api/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
