@@ -55,6 +55,8 @@ In root directory you will find:
 - shared_notes.postman_globals.json (contains environment var for postman)
 - shared-notes-app.postman_collection.json (postman collection)
 
+<img width="1435" alt="Screenshot 2022-11-12 at 19 15 36" src="https://user-images.githubusercontent.com/12540508/201492436-1c58f2aa-0b06-4b14-96fd-b88b39b72f04.png">
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
